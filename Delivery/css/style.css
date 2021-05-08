@@ -177,12 +177,12 @@ nav a:focus{
     font-size: 16px;
     font-family: Poppins-Light;
 }
-.advertising-block{
+.advertising-delivery{
     display: flex;
     width: auto;
     margin-bottom: 30px;
 }
-.advertising-block span{
+.advertising-dekivery span{
     color: #fff;
     font-size: 18px;
     font-family: Poppins-Bold;
