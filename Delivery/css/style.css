@@ -319,6 +319,7 @@ span.point{
     width: 75%;
     height: 50px;
     padding-left: 20px;
+    font-family: Poppins-Regular;
 }
 .search-line input::placeholder{
     color: #fff;
