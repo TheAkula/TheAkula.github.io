@@ -138,7 +138,7 @@ nav a:focus{
 }
 .advertising{
     background: linear-gradient(45deg, rgb(186,0,0) 30%,transparent 70%),
-    url("img/slider.png") no-repeat;
+    url("../img/slider.png") no-repeat;
     background-size: 100% 100%;
     height: 700px;
     
@@ -259,7 +259,6 @@ span.point{
     font-family: Poppins-SemiBold;
     color: rgb(186,0,0);
     margin-bottom: 10px;
-    white-space: nowrap;
 }
 .service p{
     color: rgb(119,119,119);
@@ -379,8 +378,8 @@ span.point{
     padding-right: 40px;
 }
 .service-provider{
-    background: url("img/overley-provider.png"),
-    url("img/overley-provider-img.png");
+    background: url("../img/overley-provider.png"),
+    url("../img/overley-provider-img.png");
     background-size: 100% 700px;
     background-repeat: no-repeat;
     width: 100%;
@@ -650,8 +649,8 @@ span.point{
     color: rgb(119,119,119);
 }
 .people{
-    background: url("img/overley-dhl.png") no-repeat ,
-    url(img/dhl-people.png") no-repeat ;
+    background: url("../img/overley-dhl.png") no-repeat ,
+    url("../img/dhl-people.png") no-repeat ;
     width: 30%;
     background-size: 100% 100%;
     height: 350px;
