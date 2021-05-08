@@ -6,6 +6,9 @@ for(let i=0;i<searchExpressBlocks.length;i++){
     let floatMenu=searchExpressBlock.querySelector('.float-menu')
     selectButton.onclick=function(evt){
         evt.preventDefault();
+        for(searchBlock of searchExpressBlocks){
+            searchBlock.classList.remove('search-express-click')
+        }
         if(floatMenu.style.display!=='flex'){
         for(menu of floatMenus){
             menu.style.display='none';
