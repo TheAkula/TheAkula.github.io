@@ -381,10 +381,10 @@ span.point{
 .service-provider{
     background: url("../img/overley-provider.png"),
     url("../img/overley-provider-img.png");
-    background-size: 100% 700px;
+    background-size: 100% 550px;
     background-repeat: no-repeat;
     width: 100%;
-    height: 700px;
+    height: 550px;
     position: relative;
     display: flex;
     align-items: center;
@@ -409,7 +409,6 @@ span.point{
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    margin-top: 100px;
 }
 .play div{
     margin-right: 2px;
