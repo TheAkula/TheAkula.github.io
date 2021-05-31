@@ -519,10 +519,7 @@ textarea{
     display: block;
     width: 100%;
 }
-.filter img{
-    position: absolute;
-    right: 20px;
-}
+
 .butn2{
     background-color: #fff;
     width: 172px;
@@ -660,12 +657,13 @@ textarea{
     color: rgb(134,134,134);
     font-size: 16px;
     margin-bottom: 20px;
+    margin-right: 41px;
+}
+.travel-links .float-item{
+    margin-bottom: 20px;
 }
 .simple-link:hover{
     color: #3ec6ff;
-}
-.travel-links .simple-link{
-    margin-right: 41px;
 }
 
 .tours{
