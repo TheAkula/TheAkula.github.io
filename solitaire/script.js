@@ -173,7 +173,6 @@ function OnMouseDown(event) {
             let placeColor = elemBellow.dataset.color || null;
             let num = q ? -1 : 1;
             let placeNum = +elemBellow.dataset.order;
-            console.log(+card.dataset.order + num, placeNum)
             if(!w)
             if(placeColor == card.dataset.color ) return;
             if(placeNum != +card.dataset.order + num) return;
