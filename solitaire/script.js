@@ -260,7 +260,7 @@ function CheckCardPosition(){
 
 function CheckEnd(){
     let shirtCards = document.querySelectorAll('.shirt');
-    if(shirtCards) return;
+    if(shirtCards.length) return;
 
     alert(`You win! I'm glad it works!`)
 }
