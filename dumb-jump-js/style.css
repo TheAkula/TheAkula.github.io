@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.start-modal {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.start-modal h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.start-modal button {
+  padding: 20px;
+  font-size: 20px;
+  border: 6px solid gray;
+  cursor: pointer;
+}
+
+.start-modal button:hover {
+  background-color: rgb(202, 202, 202);
+}
+
+.end-modal {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.end-modal h1 {
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.end-modal button {
+  padding: 20px;
+  font-size: 20px;
+  border: 6px solid gray;
+  cursor: pointer;
+}
+
+.end-modal button:hover {
+  background-color: rgb(202, 202, 202);
+}
+
+.game-space {
+  width: 600px;
+  justify-content: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.black {
+  background-color: rgb(30, 30, 30);
+  z-index: 20;
+  width: calc((100% - 600px) / 2);
+  height: 100%;
+}
+
+#jumper {
+  background-color: rgb(1, 0, 48);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: calc(50% - 30px);
+  z-index: 10;
+}
+
+.platform {
+  display: block;
+  bottom: 20px;
+  position: absolute;
+  width: 80px;
+  margin: 0 auto;
+  height: 10px;
+  border-radius: 1px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: grey;
+}
+
+.broken {
+  background-color: blue;
+}
+
+.flying {
+  background-color: yellow;
+  animation: fly 6s linear alternate infinite;
+}
+
+.cloud {
+  background-color: transparent;
+  border: 2px dashed gray;
+}
+
+.danger {
+  background-color: red;
+}
+
+.monster {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  animation: fly 6s linear alternate infinite;
+}
+
+.spring {
+  background-color: green;
+}
+
+.hell::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: hotpink;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -100%);
+}
+
+.counter {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 40px;
+  color: gray;
+  z-index: 30;
+}
+
+@keyframes fly {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: calc(100% - 80px);
+  }
+}
