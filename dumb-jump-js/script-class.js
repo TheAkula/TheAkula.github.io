@@ -138,7 +138,7 @@ class Game {
     const platforms = document.querySelectorAll(".platform");
 
     if (!platforms.length) {
-      checkLastPlatform(754, 754, this.gameSpace);
+      checkLastPlatform(document.documentElement.clientHeight, document.documentElement.clientHeight, this.gameSpace);
       return;
     }
 
@@ -217,7 +217,7 @@ class Game {
             return;
           }
           this.newHeight =
-            parseFloat(document.body.style.height) - Math.pow(x, 2) + prev;
+            document.documentElement.offsetHeight - Math.pow(x, 2) + prev;
           document.body.style.height = this.newHeight + "px";
           this.generatePlatforms();
         }
