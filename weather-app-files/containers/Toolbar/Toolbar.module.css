@@ -1,0 +1,35 @@
+.Toolbar {
+  background-color: #2a2f45;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Logo {
+  width: 197px;
+  height: 65px;
+}
+
+.Logo img {
+  width: 100%;
+}
+
+.Logout {
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LogoutIcon {
+  stroke: #fff;
+  width: 36px;
+  height: 36px;
+}
+
+@media (max-width: 600px) {
+  .Toolbar {
+    background-color: #161b30;
+  }
+}

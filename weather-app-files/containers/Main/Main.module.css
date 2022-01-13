@@ -1,0 +1,25 @@
+.Main {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  height: calc(100vh - 65px);
+  text-align: center;
+  background-color: #161b30;
+  position: relative;
+}
+
+.MainSpinner {
+  margin-top: 50px;
+}
+
+.SearchSpinner {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%);
+}
+
+@media (max-width: 600px) {
+  .Main {
+    padding: 20px;
+  }
+}
