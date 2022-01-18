@@ -1,0 +1,10 @@
+.ListElement {
+  padding: 20px;
+  height: 59px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.ListElement:hover {
+  background-color: #232738;
+}

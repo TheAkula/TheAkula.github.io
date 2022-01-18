@@ -1,0 +1,158 @@
+.City {
+  text-align: center;
+  position: relative;
+  padding-top: 76px;
+  height: calc(100vh - 65px);
+  background: radial-gradient(
+    80.36% 80.36% at 50% 0%,
+    #5a607c 0%,
+    #161b30 100%
+  );
+}
+
+.Back {
+  position: absolute;
+  left: 34px;
+  top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.Back > div {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Back svg {
+  width: 10px;
+  height: 17px;
+}
+
+.Choose {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 34px;
+  top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Choose svg {
+  width: 14px;
+  height: 20px;
+}
+
+.CityWeather h1 {
+  font-size: 56px;
+  line-height: 62px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.Sky {
+  color: #fff;
+  line-height: 17.7px;
+}
+
+.TemperatureBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.TemperatureBlock > div {
+  width: 200px;
+  height: 171px;
+  background-size: 800px;
+}
+
+.TemperatureBlock span {
+  font-size: 129.75px;
+  height: 144px;
+
+  line-height: 143.64px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.PressureBlock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.PressureBlock span {
+  color: #fff;
+}
+
+.PressureBlock > div {
+  margin-top: -5px;
+  width: 24px;
+  height: 24px;
+}
+
+.CitySpinner {
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 4px);
+  transform: translate(-50%, 20px);
+}
+
+@media (max-width: 600px) {
+  .City {
+    padding-top: 92px;
+    height: 100vh;
+  }
+  .Back {
+    left: 20px;
+    top: 20px;
+  }
+  .Vector {
+    right: 20px;
+    top: 20px;
+  }
+  .TemperatureBlock span {
+    font-size: 120px;
+    line-height: 132.84px;
+  }
+  .CityWeather h1 {
+    font-size: 24px;
+    line-height: 26.57px;
+    margin-bottom: 14px;
+  }
+  .Sky {
+    color: #fff;
+    font-size: 14px;
+    line-height: 15.5px;
+  }
+  .TemperatureBlock {
+    display: block;
+  }
+  .TemperatureBlock > div {
+    background-size: 550px;
+    width: 138px;
+    height: 112px;
+    margin: 0 auto;
+  }
+  .Back span {
+    display: none;
+  }
+}
