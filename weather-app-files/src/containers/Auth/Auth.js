@@ -145,6 +145,9 @@ const Auth = () => {
             placeholder="Пароль"
             value={password.value}
           />
+          <span style={{ color: "#54586d", fontSize: "14px" }}>
+            *Пароль должен содержать минимум 7 символов
+          </span>
           <button className={classes.Submit} type="submit" disabled={!valid}>
             {!isSignIn ? "Зарегистрироваться" : "Войти"}
           </button>
