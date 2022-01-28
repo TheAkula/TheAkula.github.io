@@ -1,0 +1,50 @@
+.block-input {
+  width: 510px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.block-input__input {
+  background-color: #2a2f45;
+  height: 56px;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.block-input__input::placeholder {
+  color: hsl(227, 16%, 61%);
+}
+
+.block-input__datalist {
+  width: 100%;
+  position: absolute;
+  background-color: #30354b;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  top: calc(100% - 2px);
+  left: 0;
+  max-height: 300px;
+  overflow: auto;
+  z-index: 10;
+}
+
+.block-input__datalist::-webkit-scrollbar {
+  display: none;
+}
+
+.spinner-input {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 600px) {
+  .block-input {
+    width: 100%;
+  }
+}

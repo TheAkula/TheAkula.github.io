@@ -1,0 +1,10 @@
+.datalist__city {
+  padding: 20px;
+  height: 59px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.datalist__city:hover {
+  background-color: #232738;
+}

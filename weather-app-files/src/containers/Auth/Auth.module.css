@@ -1,0 +1,76 @@
+.block-auth {
+  padding-top: 80px;
+}
+
+.auth {
+  width: 80%;
+  padding: 20px;
+  background-color: #2a2f45;
+  box-shadow: 5px 5px 0 #1d223a;
+  border-radius: 6px;
+  margin: auto;
+  text-align: center;
+}
+
+.auth__button-submit {
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 22px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.auth__button-submit:disabled {
+  color: #5c5c5c;
+  cursor: not-allowed;
+}
+
+.auth__input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  border-bottom: 2px solid #1d223a;
+}
+
+.auth__input::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.auth__button-change-mode {
+  font-size: 1em;
+  text-decoration: none;
+  color: rgb(70, 70, 255);
+  display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.auth__input_invalid {
+  color: #fff;
+  border-color: rgb(255, 70, 70);
+}
+
+.spinner_auth {
+  margin: 0 auto;
+}
+
+@media (min-width: 501px) {
+  .block-auth {
+    height: calc(100vh - 65px);
+  }
+  .auth {
+    width: 500px;
+  }
+}

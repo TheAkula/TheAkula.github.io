@@ -1,0 +1,22 @@
+.main-cities {
+  max-width: 880px;
+  margin: 55px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  max-height: calc(100vh - 256px);
+  overflow: auto;
+  padding-bottom: 20px;
+}
+
+.main-cities::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .main-cities {
+    gap: 19px;
+    max-width: 100%;
+    margin: 33px auto 0 auto;
+  }
+}

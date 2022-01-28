@@ -1,0 +1,33 @@
+@font-face {
+  font-family: SF Pro Display Regular;
+  src: url("./assets/fonts/SFPRODISPLAYREGULAR.OTF");
+}
+
+@font-face {
+  font-family: SF Pro Display Medium;
+  src: url("./assets/fonts/SFPRODISPLAYMEDIUM.OTF");
+}
+
+@font-face {
+  font-family: SF Pro Display Semi-Bold;
+  src: url("./assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF");
+}
+
+* {
+  margin: 0;
+  font-family: SF Pro Display Regular, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8a91ab;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #161b30;
+}

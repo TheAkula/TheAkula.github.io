@@ -1,0 +1,38 @@
+.main-city {
+  width: 270px;
+  height: 190px;
+  border-radius: 6px;
+  background-color: rgba(41, 46, 68, 0.5);
+  cursor: pointer;
+  text-align: center;
+  padding-top: 23px;
+  position: relative;
+}
+
+.main-city__p-name {
+  color: #fff;
+  font-size: 14px;
+  line-height: 15.5px;
+  margin-bottom: 12px;
+}
+
+.main-city__p-temp {
+  color: #fff;
+  font-size: 40px;
+  line-height: 44.28px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.main-city > div {
+  background-size: 340px;
+  height: 70px;
+  width: 86px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .main-city {
+    width: 158px;
+  }
+}

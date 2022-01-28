@@ -1,0 +1,158 @@
+.city {
+  text-align: center;
+  position: relative;
+  padding-top: 76px;
+}
+
+.city__button-back {
+  position: absolute;
+  left: 34px;
+  top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.city__button-back > div {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city__button-choose {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 34px;
+  top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.city-weather h1 {
+  font-size: 56px;
+  line-height: 62px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.city-weather__p-sky {
+  color: #fff;
+  line-height: 17.7px;
+}
+
+.block-temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.svg-container {
+  width: 190px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-container > div {
+  width: 180px;
+  height: 150px;
+  background-size: 700px;
+  margin-top: -18px;
+}
+
+.block-temperature span {
+  font-size: 129.75px;
+  height: 144px;
+
+  line-height: 143.64px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.block-pressure {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.block-pressure span {
+  color: #fff;
+}
+
+.block-pressure > div {
+  margin-top: -5px;
+  width: 24px;
+  height: 24px;
+}
+
+.spinenr_city {
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .city {
+    padding-top: 92px;
+    height: 100vh;
+  }
+
+  .city__button-back {
+    left: 20px;
+    top: 20px;
+  }
+
+  .city__button-back span {
+    display: none;
+  }
+
+  .block-temperature span {
+    font-size: 120px;
+    line-height: 132.84px;
+  }
+
+  .city-weather h1 {
+    font-size: 24px;
+    line-height: 26.57px;
+    margin-bottom: 14px;
+  }
+
+  .city-weather__p-sky {
+    color: #fff;
+    font-size: 14px;
+    line-height: 15.5px;
+  }
+
+  .block-temperature {
+    display: block;
+  }
+
+  .svg-container {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2px;
+    height: auto;
+  }
+
+  .svg-container > div {
+    background-size: 550px;
+    margin-left: 36px;
+    width: 148px;
+    height: 112px;
+  }
+}

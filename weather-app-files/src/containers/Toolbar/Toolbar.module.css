@@ -1,0 +1,36 @@
+.toolbar {
+  background-color: #2a2f45;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar__logo {
+  width: 197px;
+  height: 65px;
+}
+
+.toolbar__logo img {
+  width: 100%;
+}
+
+.toolbar__logout {
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbar_show {
+}
+
+@media (max-width: 600px) {
+  .toolbar {
+    background-color: #161b30;
+  }
+
+  .toolbar_show {
+    display: none;
+  }
+}
